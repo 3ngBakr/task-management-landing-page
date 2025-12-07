@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نظام إدارة المهام المتكامل للمؤسسات الحكومية والخاصة - حلول ذكية لإدارة المهام والمشاريع">
+    <title>نظام إدارة المهام - الحل الأمثل لإدارة المهام المؤسسية</title>
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts - Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-tasks text-primary me-2"></i>
+                نظام إدارة المهام
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">الميزات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stats">الإحصائيات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">المزايا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">الأسعار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h1 class="display-3 fw-bold mb-4 text-white">
+                        نظام إدارة المهام المتكامل
+                        <span class="text-warning">للمؤسسات الذكية</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        منصة مؤسسية متكاملة لإدارة المهام والمشاريع، مصممة خصيصاً للمؤسسات الحكومية والخاصة 
+                        ذات الهيكل التنظيمي الهرمي. وفر شفافية كاملة وكفاءة عالية في إدارة الموارد.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-warning btn-lg px-5">
+                            <i class="fas fa-rocket me-2"></i>
+                            ابدأ الآن
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg px-5">
+                            <i class="fas fa-info-circle me-2"></i>
+                            اعرف المزيد
+                        </a>
+                    </div>
+                    <div class="mt-5">
+                        <div class="row g-4">
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <h3 class="text-warning fw-bold mb-0">237+</h3>
+                                    <p class="text-white-50 mb-0">مستخدم نشط</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <h3 class="text-warning fw-bold mb-0">99.5%</h3>
+                                    <p class="text-white-50 mb-0">التوفر</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <h3 class="text-warning fw-bold mb-0">85%+</h3>
+                                    <p class="text-white-50 mb-0">معدل الإكمال</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-image">
+                        <div class="dashboard-mockup">
+                            <i class="fas fa-tasks fa-10x text-white opacity-25"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="currentColor"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">الميزات الرئيسية</h2>
+                <p class="lead text-muted">نظام متكامل يوفر جميع الأدوات التي تحتاجها لإدارة مهامك بكفاءة</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">إدارة المهام الشاملة</h4>
+                        <p class="text-muted">
+                            إنشاء وتخصيص المهام للموظفين مع تتبع حالة المهام ونظام أولويات متقدم 
+                            ومهام هرمية للمدراء ومهام شخصية (Todos)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">الهيكل التنظيمي المتكامل</h4>
+                        <p class="text-muted">
+                            دعم كامل للهيكل التنظيمي الهرمي: 6 قطاعات، 12 إدارة عامة، 
+                            24 إدارة فرعية، 48 قسم متخصص مع دعم الإدارات النمطية والقطاعية
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">نظام الأدوار والصلاحيات</h4>
+                        <p class="text-muted">
+                            10 أدوار مختلفة مع صلاحيات محددة، صلاحيات هرمية حسب الموقع التنظيمي، 
+                            وصلاحيات زمنية وتنظيمية متقدمة
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">التقارير والإحصائيات</h4>
+                        <p class="text-muted">
+                            لوحة تحكم تفاعلية مع تقارير مفصلة (Excel/PDF)، 
+                            رسوم بيانية ديناميكية وإحصائيات فورية
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">نظام الإشعارات</h4>
+                        <p class="text-muted">
+                            إشعارات فورية داخلية، تنبيهات البريد الإلكتروني، 
+                            تنبيهات المهام المتأخرة التلقائية واليدوية
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">دعم كامل للعربية</h4>
+                        <p class="text-muted">
+                            دعم كامل للغة العربية مع RTL، خطوط عربية جميلة، 
+                            وواجهة عربية كاملة مصممة خصيصاً للمؤسسات العربية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">الأرقام تتحدث</h2>
+                <p class="lead">إحصائيات حقيقية من نظامنا في العمل</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-warning"></i>
+                        <h3 class="display-4 fw-bold mb-2" data-count="237">0</h3>
+                        <p class="lead mb-0">مستخدم نشط</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-building fa-3x mb-3 text-warning"></i>
+                        <h3 class="display-4 fw-bold mb-2" data-count="6">0</h3>
+                        <p class="lead mb-0">قطاعات رئيسية</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-check-circle fa-3x mb-3 text-warning"></i>
+                        <h3 class="display-4 fw-bold mb-2" data-count="85">0</h3>
+                        <p class="lead mb-0">% معدل الإكمال</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-card text-center">
+                        <i class="fas fa-heart fa-3x mb-3 text-warning"></i>
+                        <h3 class="display-4 fw-bold mb-2" data-count="90">0</h3>
+                        <p class="lead mb-0">% رضا المستخدمين</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">لماذا تختار نظامنا؟</h2>
+                <p class="lead text-muted">مزايا تنافسية تجعلنا الخيار الأمثل</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="benefit-item d-flex mb-4">
+                        <div class="benefit-icon me-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-2">تكلفة منخفضة</h4>
+                            <p class="text-muted mb-0">
+                                لا توجد رسوم شهرية، تكلفة تطوير واحدة فقط. 
+                                وفر آلاف الدولارات مقارنة بالأنظمة التجارية الأخرى.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item d-flex mb-4">
+                        <div class="benefit-icon me-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-2">قابل للتخصيص الكامل</h4>
+                            <p class="text-muted mb-0">
+                                يمكن تخصيص النظام بالكامل حسب احتياجات مؤسستك. 
+                                لا قيود، لا حدود، تحكم كامل.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item d-flex mb-4">
+                        <div class="benefit-icon me-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-2">مفتوح المصدر</h4>
+                            <p class="text-muted mb-0">
+                                يمكن التطوير والتعديل بحرية. لا توجد قيود على عدد المستخدمين 
+                                أو الميزات.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item d-flex mb-4">
+                        <div class="benefit-icon me-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-2">دعم فني ممتاز</h4>
+                            <p class="text-muted mb-0">
+                                دعم فني 24/7 مع وقت استجابة أقل من 4 ساعات للقضايا الحرجة. 
+                                فريق محترف جاهز لمساعدتك.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="comparison-table">
+                        <h4 class="fw-bold mb-4 text-center">مقارنة سريعة</h4>
+                        <table class="table table-bordered">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>الميزة</th>
+                                    <th class="text-center">نظامنا</th>
+                                    <th class="text-center">المنافسون</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>دعم العربية (RTL)</td>
+                                    <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                                    <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>الهيكل الهرمي</td>
+                                    <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                                    <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>تكلفة منخفضة</td>
+                                    <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                                    <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>لا قيود على المستخدمين</td>
+                                    <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                                    <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>قابل للتخصيص</td>
+                                    <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                                    <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Benefits Section -->
+    <section id="financial" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">الجدوى المالية والعائد</h2>
+                <p class="lead text-muted">استثمار ذكي بعائد ممتاز</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="financial-card h-100 text-center">
+                        <div class="financial-icon mb-3">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">تكلفة منخفضة</h4>
+                        <p class="text-muted mb-4">
+                            تكلفة تطوير واحدة فقط بدون رسوم شهرية متكررة. 
+                            وفر آلاف الدولارات سنوياً.
+                        </p>
+                        <div class="price-badge">
+                            <span class="h3 fw-bold text-primary">$5,000 - $15,000</span>
+                            <p class="text-muted mb-0">ترخيص واحد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="financial-card h-100 text-center">
+                        <div class="financial-icon mb-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">عائد ممتاز</h4>
+                        <p class="text-muted mb-4">
+                            معدل عائد يصل إلى 1400% في السيناريو المتفائل. 
+                            نقطة التعادل في 6-12 شهر.
+                        </p>
+                        <div class="price-badge">
+                            <span class="h3 fw-bold text-success">200% - 1400%</span>
+                            <p class="text-muted mb-0">معدل العائد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="financial-card h-100 text-center">
+                        <div class="financial-icon mb-3">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">تكاليف تشغيلية منخفضة</h4>
+                        <p class="text-muted mb-4">
+                            تكاليف تشغيلية سنوية منخفضة تتراوح بين 
+                            $6,840 - $18,600 فقط.
+                        </p>
+                        <div class="price-badge">
+                            <span class="h3 fw-bold text-info">$6,840 - $18,600</span>
+                            <p class="text-muted mb-0">سنوياً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="roi-chart p-4 bg-white rounded shadow">
+                        <h4 class="fw-bold mb-4 text-center">العائد المتوقع على الاستثمار</h4>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="roi-item text-center p-3 border rounded">
+                                    <h5 class="text-muted mb-2">السنة الأولى</h5>
+                                    <h3 class="text-primary fw-bold mb-1">$40K - $130K</h3>
+                                    <p class="text-muted mb-0 small">صافي الربح</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="roi-item text-center p-3 border rounded">
+                                    <h5 class="text-muted mb-2">السنة الثانية</h5>
+                                    <h3 class="text-success fw-bold mb-1">$135K - $275K</h3>
+                                    <p class="text-muted mb-0 small">صافي الربح</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="roi-item text-center p-3 border rounded">
+                                    <h5 class="text-muted mb-2">السنة الثالثة</h5>
+                                    <h3 class="text-warning fw-bold mb-1">$280K - $470K</h3>
+                                    <p class="text-muted mb-0 small">صافي الربح</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">الجودة التقنية</h2>
+                <p class="lead text-muted">تقنيات حديثة وأداء عالي</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-card text-center">
+                        <i class="fab fa-laravel fa-4x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Laravel 12.x</h5>
+                        <p class="text-muted small mb-0">إطار عمل PHP متقدم</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-card text-center">
+                        <i class="fab fa-bootstrap fa-4x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Bootstrap 5</h5>
+                        <p class="text-muted small mb-0">واجهة متجاوبة</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-card text-center">
+                        <i class="fas fa-database fa-4x text-info mb-3"></i>
+                        <h5 class="fw-bold">MySQL 8.0+</h5>
+                        <p class="text-muted small mb-0">قاعدة بيانات قوية</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-card text-center">
+                        <i class="fab fa-docker fa-4x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Docker</h5>
+                        <p class="text-muted small mb-0">حاويات للتطوير</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="performance-metrics p-4 bg-light rounded">
+                        <h4 class="fw-bold mb-4 text-center">مؤشرات الأداء</h4>
+                        <div class="row g-4">
+                            <div class="col-md-3 text-center">
+                                <h3 class="text-primary fw-bold mb-1">&lt; 200ms</h3>
+                                <p class="text-muted mb-0">زمن الاستجابة</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h3 class="text-success fw-bold mb-1">1000+</h3>
+                                <p class="text-muted mb-0">مستخدم متزامن</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h3 class="text-info fw-bold mb-1">99.9%</h3>
+                                <p class="text-muted mb-0">التوفر</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <h3 class="text-warning fw-bold mb-1">1M+</h3>
+                                <p class="text-muted mb-0">مهمة مدعومة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">خطط الأسعار</h2>
+                <p class="lead text-muted">اختر الخطة المناسبة لمؤسستك</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card h-100">
+                        <div class="pricing-header">
+                            <h4 class="fw-bold mb-2">ترخيص واحد</h4>
+                            <div class="price">
+                                <span class="h2 fw-bold">$5,000</span>
+                                <span class="text-muted"> - $15,000</span>
+                            </div>
+                            <p class="text-muted mb-0">دفعة واحدة</p>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> ترخيص دائم</li>
+                            <li><i class="fas fa-check text-success me-2"></i> لا رسوم شهرية</li>
+                            <li><i class="fas fa-check text-success me-2"></i> دعم فني لمدة سنة</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تحديثات مجانية</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تدريب المستخدمين</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100">اختر هذه الخطة</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card h-100 featured">
+                        <div class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle px-3 py-2">
+                            الأكثر شعبية
+                        </div>
+                        <div class="pricing-header">
+                            <h4 class="fw-bold mb-2">اشتراك سنوي</h4>
+                            <div class="price">
+                                <span class="h2 fw-bold">$1,000</span>
+                                <span class="text-muted"> - $3,000</span>
+                            </div>
+                            <p class="text-muted mb-0">سنوياً</p>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> اشتراك سنوي</li>
+                            <li><i class="fas fa-check text-success me-2"></i> دعم فني 24/7</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تحديثات مستمرة</li>
+                            <li><i class="fas fa-check text-success me-2"></i> صيانة شاملة</li>
+                            <li><i class="fas fa-check text-success me-2"></i> نسخ احتياطية يومية</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-warning w-100">اختر هذه الخطة</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card h-100">
+                        <div class="pricing-header">
+                            <h4 class="fw-bold mb-2">تخصيص وتطوير</h4>
+                            <div class="price">
+                                <span class="h2 fw-bold">$2,000</span>
+                                <span class="text-muted"> - $10,000</span>
+                            </div>
+                            <p class="text-muted mb-0">لكل مشروع</p>
+                        </div>
+                        <ul class="pricing-features list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> تخصيص كامل</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تطوير ميزات جديدة</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تكامل مع أنظمة أخرى</li>
+                            <li><i class="fas fa-check text-success me-2"></i> تدريب متخصص</li>
+                            <li><i class="fas fa-check text-success me-2"></i> دعم فني مخصص</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100">اختر هذه الخطة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">تواصل معنا</h2>
+                <p class="lead">نحن هنا لمساعدتك في تحويل مؤسستك رقمياً</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h4 class="fw-bold mb-4">معلومات التواصل</h4>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">البريد الإلكتروني</h5>
+                                <p class="mb-0">engbmah@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">الهاتف</h5>
+                                <p class="mb-0">+967 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">ساعات العمل</h5>
+                                <p class="mb-0">24/7 - دعم فني على مدار الساعة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="اسم المؤسسة">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg w-100">
+                            <i class="fas fa-paper-plane me-2"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-tasks text-warning me-2"></i>
+                        نظام إدارة المهام
+                    </h5>
+                    <p class="text-white-50">
+                        منصة مؤسسية متكاملة لإدارة المهام والمشاريع، 
+                        مصممة خصيصاً للمؤسسات الحكومية والخاصة.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50 text-decoration-none">الرئيسية</a></li>
+                        <li><a href="#features" class="text-white-50 text-decoration-none">الميزات</a></li>
+                        <li><a href="#benefits" class="text-white-50 text-decoration-none">المزايا</a></li>
+                        <li><a href="#pricing" class="text-white-50 text-decoration-none">الأسعار</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2025 نظام إدارة المهام. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
