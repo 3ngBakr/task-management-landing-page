@@ -23,11 +23,20 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
+    word-wrap: break-word;
+}
+
+/* Prevent horizontal scroll */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===================================
@@ -43,15 +52,36 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color) !important;
 }
 
+.navbar-nav {
+    align-items: center;
+}
+
 .navbar-nav .nav-link {
     font-weight: 500;
     margin: 0 0.5rem;
     color: #333 !important;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--primary-color) !important;
+}
+
+/* Ensure proper RTL alignment */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: right;
+    }
 }
 
 /* ===================================
@@ -408,40 +438,589 @@ footer a:hover {
 /* ===================================
    Responsive Design
    =================================== */
+
+/* Tablet and below (768px) */
 @media (max-width: 768px) {
+    /* Navigation */
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.25rem 0;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Hero Section */
     .hero-section {
-        padding-top: 100px;
+        padding-top: 80px;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-section .min-vh-100 {
+        min-height: auto !important;
+        padding: 2rem 0;
+    }
+    
+    .hero-section .row {
+        text-align: center;
     }
     
     .display-3 {
         font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .dashboard-mockup {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .dashboard-mockup i {
+        font-size: 5rem !important;
+    }
+    
+    /* Buttons */
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+    
+    /* Stats in Hero */
+    .hero-section .col-4 {
+        margin-bottom: 1rem;
+    }
+    
+    .hero-section .col-4 h3 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section .col-4 p {
+        font-size: 0.85rem;
+    }
+    
+    /* Feature Cards */
+    .feature-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Stats Section */
+    .stat-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .stat-card i {
+        font-size: 2rem !important;
+    }
+    
+    .stat-card .display-4 {
+        font-size: 2rem;
+    }
+    
+    /* Benefits Section */
+    .benefit-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .benefit-icon {
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+        padding: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .comparison-table table {
+        font-size: 0.9rem;
+        min-width: 500px;
+        width: 100%;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Financial Cards */
+    .financial-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .financial-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    /* Pricing Cards */
+    .pricing-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .pricing-card.featured {
         transform: scale(1);
+        margin-top: 0;
     }
     
     .pricing-card.featured:hover {
         transform: translateY(-10px);
     }
     
-    .wave-divider svg {
-        height: 60px;
+    .pricing-header {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
     }
-}
-
-@media (max-width: 576px) {
-    .hero-section {
+    
+    /* Technical Section */
+    .tech-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tech-card i {
+        font-size: 3rem !important;
+    }
+    
+    .performance-metrics {
+        padding: 1.5rem !important;
+    }
+    
+    .performance-metrics h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Contact Section */
+    .contact-info {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
         text-align: center;
     }
     
+    .contact-icon {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .contact-icon i {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Footer */
+    footer .col-md-4 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        text-align: center;
+    }
+    
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+    
+    .social-links i {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Wave Divider */
+    .wave-divider svg {
+        height: 60px;
+    }
+    
+    /* Display sizes */
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    /* ROI Chart */
+    .roi-chart {
+        padding: 1.5rem !important;
+    }
+    
+    .roi-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+    /* Navigation */
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding-top: 70px;
+        padding-bottom: 1.5rem;
+    }
+    
+    .hero-section .min-vh-100 {
+        min-height: auto !important;
+        padding: 1.5rem 0;
+    }
+    
     .display-3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .dashboard-mockup {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .dashboard-mockup i {
+        font-size: 4rem !important;
+    }
+    
+    /* Buttons */
+    .btn-lg {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Stats in Hero */
+    .hero-section .row.g-4 {
+        margin-top: 2rem;
+    }
+    
+    .hero-section .col-4 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-section .col-4 h3 {
+        font-size: 1.25rem;
+    }
+    
+    .hero-section .col-4 p {
+        font-size: 0.8rem;
+    }
+    
+    /* Feature Cards */
+    .feature-card {
+        padding: 1.25rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    /* Stats Section */
+    .stat-card {
+        padding: 1.25rem;
+    }
+    
+    .stat-card i {
+        font-size: 1.75rem !important;
+        margin-bottom: 0.75rem;
+    }
+    
+    .stat-card .display-4 {
         font-size: 1.75rem;
     }
     
-    .btn-lg {
-        padding: 0.75rem 1.5rem;
+    .stat-card .lead {
+        font-size: 0.9rem;
+    }
+    
+    /* Benefits Section */
+    .benefit-item {
+        padding: 0.75rem;
+    }
+    
+    .benefit-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-item p {
+        font-size: 0.9rem;
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+        padding: 0.75rem;
+    }
+    
+    .comparison-table table {
+        font-size: 0.85rem;
+        min-width: 450px;
+        width: 100%;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.5rem;
+        white-space: nowrap;
+    }
+    
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Financial Cards */
+    .financial-card {
+        padding: 1.25rem;
+    }
+    
+    .financial-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .financial-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.75rem;
+    }
+    
+    .price-badge {
+        padding: 0.75rem;
+    }
+    
+    .price-badge .h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Pricing Cards */
+    .pricing-card {
+        padding: 1.25rem;
+    }
+    
+    .pricing-header h4 {
+        font-size: 1.25rem;
+    }
+    
+    .pricing-header .h2 {
+        font-size: 1.75rem;
+    }
+    
+    .pricing-features {
+        margin: 1.5rem 0;
+    }
+    
+    .pricing-features li {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    
+    /* Technical Section */
+    .tech-card {
+        padding: 1.25rem;
+    }
+    
+    .tech-card i {
+        font-size: 2.5rem !important;
+    }
+    
+    .tech-card h5 {
         font-size: 1rem;
+    }
+    
+    .performance-metrics {
+        padding: 1.25rem !important;
+    }
+    
+    .performance-metrics h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .performance-metrics h3 {
+        font-size: 1.25rem;
+    }
+    
+    .performance-metrics p {
+        font-size: 0.85rem;
+    }
+    
+    /* ROI Chart */
+    .roi-chart {
+        padding: 1.25rem !important;
+    }
+    
+    .roi-chart h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .roi-item {
+        padding: 1rem !important;
+    }
+    
+    .roi-item h5 {
+        font-size: 0.95rem;
+    }
+    
+    .roi-item h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Contact Section */
+    .contact-info {
+        padding: 0.75rem;
+    }
+    
+    .contact-info h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 0.75rem;
+    }
+    
+    .contact-item h5 {
+        font-size: 1rem;
+    }
+    
+    .contact-item p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form .form-control {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 2rem 0 !important;
+    }
+    
+    footer h5 {
+        font-size: 1.1rem;
+    }
+    
+    footer p,
+    footer a {
+        font-size: 0.9rem;
+    }
+    
+    /* Display sizes */
+    .display-4 {
+        font-size: 1.75rem;
+    }
+    
+    /* Sections padding */
+    section {
+        padding: 3rem 0 !important;
+    }
+    
+    /* Container padding */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Wave Divider */
+    .wave-divider svg {
+        height: 40px;
+    }
+    
+    /* Text alignment */
+    .text-center {
+        text-align: center !important;
+    }
+    
+    /* Spacing adjustments */
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .mb-3 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Extra small devices (480px and below) */
+@media (max-width: 480px) {
+    .display-3 {
+        font-size: 1.35rem;
+    }
+    
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section .col-4 h3 {
+        font-size: 1.1rem;
+    }
+    
+    .stat-card .display-4 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .comparison-table table {
+        font-size: 0.8rem;
+        min-width: 400px;
     }
 }
 
